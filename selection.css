@@ -1,0 +1,81 @@
+#selectionbox{
+    height: 165px;
+    width: 88vw;
+    margin:25px;
+    margin-top: 5px;
+    border: 2px solid rgb(72, 66, 66);
+    position: absolute;
+    display: flex;
+    margin-top: 5px;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: rgb(239, 232, 232);
+}
+#heading{
+    margin-top: 4px;
+    position: relative;
+    text-align: center;
+    margin-top: 140px;
+    font-size: 24px;
+    
+}
+
+.favContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.favContainer img {
+    max-width: 210px;
+    margin-right: 10px;
+}
+
+.favContainer button {
+    width: 56px;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 44px;
+    padding: 2px ;
+    cursor: pointer;
+}
+  
+
+
+.actionButton {
+    display: block;
+    margin: 10px auto;
+}
+#lbOverlay, #favOverlay, #activeModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#favOverlay figure img {
+    max-width: 80%; /* Adjust as necessary */
+    max-height: 80%; /* Adjust as necessary */
+    object-fit: contain; /* Ensures the image scales properly */
+}
+
+#lbOverlay figure, #favOverlay figure, #activeModal figure {
+    text-align: center;
+    color: white;
+}
+#lbOverlayClose, #favOverlayClose, #modalClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
